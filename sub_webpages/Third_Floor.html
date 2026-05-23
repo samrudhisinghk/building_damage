@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Third Floor Inspection</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+
+            min-height: 100vh;
+
+            padding: 50px 25px;
+
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+
+            color: white;
+        }
+
+        h1{
+            text-align: center;
+
+            font-size: 3.5rem;
+
+            margin-bottom: 55px;
+
+            text-shadow: 0 5px 18px rgba(0,0,0,0.35);
+        }
+
+        .container{
+            max-width: 1300px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+            gap: 35px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.10);
+
+            backdrop-filter: blur(15px);
+
+            border-radius: 24px;
+
+            overflow: hidden;
+
+            border: 1px solid rgba(255,255,255,0.15);
+
+            box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+
+            transition: all 0.4s ease;
+        }
+
+        .card:hover{
+            transform: translateY(-10px) scale(1.02);
+
+            box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+        }
+
+        .card img{
+            width: 100%;
+            height: 280px;
+
+            object-fit: cover;
+        }
+
+        .content{
+            padding: 28px;
+        }
+
+        h2{
+            font-size: 2rem;
+
+            margin-bottom: 15px;
+
+            color: white;
+        }
+
+        p{
+            font-size: 1.05rem;
+
+            line-height: 1.7;
+
+            color: rgba(255,255,255,0.88);
+        }
+
+        .status{
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 10px 18px;
+
+            border-radius: 30px;
+
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+
+            font-size: 0.92rem;
+
+            font-weight: 600;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        .footer{
+            text-align: center;
+
+            margin-top: 50px;
+
+            color: rgba(255,255,255,0.72);
+
+            font-size: 0.95rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>🏢 Third Floor Inspection</h1>
+
+    <div class="container">
+
+        <!-- C-309 -->
+        <div class="card">
+
+            <img src="https://github.com/samrudhisinghk/building_damage/blob/main/Broken%20Tiles/Floor%20Dataset/Third%20floor/C%20309.jpg">
+
+            <div class="content">
+
+                <h2>📍 Room C-309</h2>
+
+                <p>
+                    Cracked flooring identified inside Room C-309.
+                    Surface damage may expand further if left unattended.
+                </p>
+
+                <span class="status">
+                    ⚠ Inspection Required
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- C-310 -->
+        <div class="card">
+
+            <img src="C:\Users\Adite\Desktop\WEB_Tech PBL\Broken Tiles-20260509T191535Z-3-001\Broken Tiles\Floor Dataset\Third floor\C 310.jpg">
+
+            <div class="content">
+
+                <h2>📍 Room C-310</h2>
+
+                <p>
+                    Damaged tiles detected in Room C-310.
+                    Maintenance team should review the affected area.
+                </p>
+
+                <span class="status">
+                    🚧 Repair Suggested
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Drawing Hall -->
+        <div class="card">
+
+            <img src="https://github.com/samrudhisinghk/building_damage/blob/main/Broken%20Tiles/Floor%20Dataset/Third%20floor/C%20310.jpg">
+
+            <div class="content">
+
+                <h2>🎨 Drawing Hall</h2>
+
+                <p>
+                    Visible cracks found near the Drawing Hall flooring area.
+                    Structural maintenance is recommended for safety.
+                </p>
+
+                <span class="status">
+                    ⚡ Damage Detected
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        AI-Powered Campus Infrastructure Monitoring ✨
+    </div>
+
+</body>
+
+</html>
