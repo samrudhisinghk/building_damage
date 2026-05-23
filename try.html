@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cracked Tile Report</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+            /* Masala gradient background */
+            background: linear-gradient(135deg, #ff512f, #dd2476, #ffb347);
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Decorative glowing circles */
+        body::before,
+        body::after {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            filter: blur(20px);
+        }
+
+        body::before {
+            top: -120px;
+            left: -100px;
+        }
+
+        body::after {
+            bottom: -120px;
+            right: -100px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+
+            padding: 50px;
+            border-radius: 24px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+
+            width: 90%;
+            max-width: 500px;
+
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 10px;
+
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+
+        .button {
+            display: block;
+
+            margin: 18px auto;
+            padding: 16px 22px;
+
+            width: 100%;
+
+            font-size: 1.1rem;
+            font-weight: 600;
+
+            text-decoration: none;
+
+            color: white;
+
+            border-radius: 14px;
+
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px) scale(1.03);
+
+            box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏢 Buildings</h1>
+
+        <p class="subtitle">
+            Cracked Tile Inspection Dashboard
+        </p>
+
+        <a href="https://github.com/samrudhisinghk/building_damage/blob/main/main_building/Main_Building.html" class="button">
+            🏛 Main Building
+        </a>
+
+        <a href="https://github.com/samrudhisinghk/building_damage/blob/main/sub_webpages/General_Area.html" class="button">
+            🌆 General Area
+        </a>
+
+        <div class="footer">
+            Made by our team✨
+        </div>
+
+    </div>
+
+</body>
+
+</html>
